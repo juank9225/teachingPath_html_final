@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        canvas {
+            border: 2px solid #000;
+            margin: 10%;
+            background-color: #406bc7;
+        }
+    </style>
+</head>
+<body onload="draw();">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script>
+        function draw() {
+        const canvas = document.getElementById("canvas");
+        if (canvas.getContext) {
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(250, 270, 50, 0, 2 * Math.PI);
+        ctx.fillStyle = "#E74C3C";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(200, 220, 18, 0, 2 * Math.PI);
+        ctx.fillStyle = "#E74C3C";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(250, 200, 18, 0, 2 * Math.PI);
+        ctx.fillStyle = "#E74C3C";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(300, 220, 18, 0, 2 * Math.PI);
+        ctx.fillStyle = "#E74C3C";
+        ctx.fill();
+        }
+    }
+ </script>
+ </body>
+</html>

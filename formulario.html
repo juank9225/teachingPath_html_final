@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <form id="formulario" action="#" method="POST">
+      <div class="contenedor">
+        <h1>Contactanos</h1>
+        <div class="row">
+          <label class="required labe" for="nombres">Nombres:</label><br />
+          <input id="nombres" class="input" name="nombres" type="text" value="" placeholder="juan carlos"/><br />
+        </div>
+        <div class="row">
+            <label class="required labe" for="apellidos">Apellidos:</label><br />
+            <input id="apellidos" class="input" name="apellidos" type="text" value="" placeholder="salcedo"/><br />
+          </div>
+        <div class="row">
+          <label class="required labe" for="email">Email:</label><br />
+          <input id="email" class="input" name="email" type="text" value="" placeholder="juan@gmail.com"/><br />
+        </div>
+        <div class="row">
+          <label class="required labe" for="select">Sexo:</label><br />
+          <select name="select" id="select">
+            <option value="M">Masculino</option>
+            <option value="F" selected>Femenino</option>
+            <option value="O">Otro</option>
+          </select>
+        </div>
+        <div class="row">
+          <label class="required labe" for="mensaje">mensaje:</label><br />
+          <textarea id="mensaje" class="input" name="mensaje" rows="7" cols="30"></textarea><br />
+        </div>
+          <input type="submit" class="my-button" value="Enviar" />
+      </div>
+      </form>
+</body>
+</html>
